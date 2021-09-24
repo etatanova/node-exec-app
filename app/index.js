@@ -56,38 +56,38 @@ testSpawn.on('close', (code) => {
   console.log(`spawn test child process exited with code ${code}`);
 });
 
-// // Node
-// const nodeSpawn = spawn('node', ['-v']);
-// nodeSpawn.stdout.on('data', (data) => {
-//   console.log(`spawn node stdout: ${data}`);
-// });
-// nodeSpawn.stderr.on('data', (data) => {
-//   console.error(`spawn node stderr: ${data}`);
-// });
-// nodeSpawn.on('close', (code) => {
-//   console.log(`spawn node child process exited with code ${code}`);
-// });
+// Node
+const nodeSpawn = spawn('node', ['-v']);
+nodeSpawn.stdout.on('data', (data) => {
+  console.log(`spawn node stdout: ${data}`);
+});
+nodeSpawn.stderr.on('data', (data) => {
+  console.error(`spawn node stderr: ${data}`);
+});
+nodeSpawn.on('close', (code) => {
+  console.log(`spawn node child process exited with code ${code}`);
+});
 
-// // NPM
-// const npmSpawn = spawn('npm', ['--version']);
-// npmSpawn.stdout.on('data', (data) => {
-//   console.log(`spawn npm stdout: ${data}`);
-// });
-// npmSpawn.stderr.on('data', (data) => {
-//   console.error(`spawn npm stderr: ${data}`);
-// });
-// npmSpawn.on('close', (code) => {
-//   console.log(`spawn npm child process exited with code ${code}`);
-// });
+// NPM
+const npmSpawn = spawn('npm', ['--version']);
+npmSpawn.stdout.on('data', (data) => {
+  console.log(`spawn npm stdout: ${data}`);
+});
+npmSpawn.stderr.on('data', (data) => {
+  console.error(`spawn npm stderr: ${data}`);
+});
+npmSpawn.on('close', (code) => {
+  console.log(`spawn npm child process exited with code ${code}`);
+});
 
-// // Yarn
-// const yarnSpawn = spawn('yarn', ['--version']);
-// yarnSpawn.stdout.on('data', (data) => {
-//   console.log(`spawn yarn stdout: ${data}`);
-// });
-// yarnSpawn.stderr.on('data', (data) => {
-//   console.error(`spawn yarn stderr: ${data}`);
-// });
-// yarnSpawn.on('close', (code) => {
-//   console.log(`spawn yarn child process exited with code ${code}`);
-// });
+// Yarn
+const yarnSpawn = spawn('yarn', ['--version']);
+yarnSpawn.stdout.on('data', (data) => {
+  console.log(`spawn yarn stdout: ${data}`);
+});
+yarnSpawn.stderr.on('data', (data) => {
+  console.error(`spawn yarn stderr: ${data}`);
+});
+yarnSpawn.on('close', (code) => {
+  console.log(`spawn yarn child process exited with code ${code}`);
+});
