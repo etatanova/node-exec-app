@@ -1,0 +1,12 @@
+{
+  "name": "test-node-exec-app",
+  "version": "1.0.0",
+  "description": "Test app to check node from snap store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Me",
+  "license": "ISC"
+}
